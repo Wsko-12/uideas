@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body{
+    overflow-x: hidden;
+}
+.slider01-section{
+    width: 100vw;
+    overflow: hidden;
+    
+}
+.slider01__wrapper{
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    padding: 60px 0px 150px;
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 50%;
+    align-items: center;
+    flex-direction: column;
+
+    @include media-tablet{
+        padding: 30px 20px 150px;
+     }
+    @include media-mobile{
+        padding: 50px 15px 150px;
+     }
+}
+
+.slider01-section__title{
+    align-self: flex-start;
+    margin: 0;
+    font-size: 100px;
+    font-family: 'Dancing Script', cursive;
+//     // font-family: 'Montserrat', sans-serif;
+//     // font-weight: bold;
+//     // text-transform: uppercase;
+
+    background: linear-gradient(101deg, #ff75ea 0%, #ff5e79 50%, #fad376 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color:#303030;
+
+    @include media-tablet{
+        align-self: center;
+        text-align: center;
+    }
+}
+.slider01-container{
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    justify-content: center;
+
+    @include media-tablet{
+        align-self: center;
+        // text-align: center;
+    }
+    @include media-mobile{
+        flex-direction: column;
+        padding-top: 20px;
+     }
+}
+
+.slider01__card{
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    height: 300px;
+    margin: 0px 5px;
+    flex: 0 0 auto;
+    transition-duration: 0.5s;
+
+    &:hover{
+        width: 300px;
+    }
+    &:hover .slider01__image{
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        
+    }
+   
+    &:hover .slider01__title{
+        color: #303030;
+    }
+    &:hover .slider01__description{
+        color: #303030;
+    }
+
+
+    @include media-mobile{
+        width: 280px;
+        height: 80px;
+        margin-bottom: 20px;
+        &:hover{
+            height: auto;
+        }
+
+        &:hover .slider01__image{
+            height: 300px;
+        }
+     }
+
+}
+
+.slider01__image{
+    filter: saturate(110%) contrast(110%);
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition-duration: 0.5s;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    flex-shrink: 0;
+
+    &_orhid{
+        background-image: url(img/slider01/orhid.png);
+    }
+    &_peony{
+        background-image: url(img/slider01/peony.png);
+    }
+    &_roses{
+        background-image: url(img/slider01/roses.png);
+    }
+    &_tulips{
+        background-image: url(img/slider01/tulips.png);
+    }
+    &_lilium{
+        background-image: url(img/slider01/lilium.png);
+    }
+    &_narcissus{
+        background-image: url(img/slider01/narcissus.png);
+    }
+
+    @include media-mobile{
+        height: 80px;
+     }
+}
+
+.slider01__content{
+    width: 300px;
+    flex-shrink: 0;
+    padding: 20px;
+}
+.slider01__title{
+    transition-duration: 0.5s;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing:3px;
+    color: transparent;
+    margin-bottom: 10px;
+}
+.slider01__description{
+    pointer-events: none;
+    transition-duration: 0.5s;
+    color: transparent;
+    width: 250px;
+    margin: 0;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
