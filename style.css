@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Catamaran&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 body {
   overflow-x: hidden;
 }
@@ -220,6 +224,109 @@ body {
   z-index: 1;
   color: white;
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.slider02__section {
+  background-color: rgb(244, 244, 244);
+  width: 100vw;
+}
+
+.slider02__wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 250px 0;
+  color: #303030;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.slider02__content {
+  height: 600px;
+  flex-grow: 0.5;
+}
+
+.slider02__title {
+  font-size: 3em;
+  font-family: "Montserrat", sans-serif;
+}
+
+.slider02__subtitle {
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
+  max-width: 400px;
+}
+
+.slider02__container {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 3;
+}
+
+.slider02__window {
+  position: relative;
+  width: 400px;
+  height: 600px;
+}
+
+.slider02__body {
+  position: absolute;
+  box-sizing: content-box;
+  left: -60%;
+  top: -50%;
+  width: 220%;
+  height: 200%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.slider02__button {
+  font-family: "Catamaran", sans-serif;
+  background: none;
+  border: none;
+  font-size: 5rem;
+  color: #353535;
+}
+
+.slider02__card {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 500px;
+  height: 300px;
+  z-index: 1;
+  box-shadow: 20px 20px 25px 0px rgba(48, 48, 48, 0.6);
+}
+.slider02__card_active {
+  z-index: 5;
+  transform: scale(1.3);
+  box-shadow: 15px 15px 50px 20px rgba(48, 48, 48, 0.4);
+}
+
+.slider02__image_orhid {
+  background-image: url(img/slider01/orhid.png);
+}
+.slider02__image_peony {
+  background-image: url(img/slider01/peony.png);
+}
+.slider02__image_roses {
+  background-image: url(img/slider01/roses.png);
+}
+.slider02__image_tulips {
+  background-image: url(img/slider01/tulips.png);
+}
+.slider02__image_lilium {
+  background-image: url(img/slider01/lilium.png);
+}
+.slider02__image_narcissus {
+  background-image: url(img/slider01/narcissus.png);
 }
 
 * {
